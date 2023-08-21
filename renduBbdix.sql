@@ -44,7 +44,7 @@ select p.lib_potion, p.formule, p.constituant_principal  from fabriquer f
 join potion p 
 on f.num_potion = p.num_potion 
 join habitant h 
-on f.num_potion = h.num_hab
+on f.num_hab  = h.num_hab
 where h.nom = 'Panoramix';
 
 --11. Liste des potions (libellés) absorbées par Homéopatix. (2 lignes)
